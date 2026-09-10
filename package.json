@@ -1,0 +1,28 @@
+{
+  "name": "mamoball-duo-bet-bot",
+  "version": "1.0.0",
+  "description": "Bot de fila apostada em dinheiro real (Duo 2v2) para o jogo MamoBall, via PIX/Mercado Pago",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "deploy-commands": "ts-node src/deploy-commands.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "firebase-admin": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/express": "^4.17.21",
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
